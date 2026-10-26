@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Pendaftaran Lomba Teknologi Kreatif</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header-form">
+			<h2>PORTAL PENDAFTARAN LOMBA</h2>
+			<p>Silakan lengkapi formulir di bawah ini untuk mendaftarkan tim Anda.</p>
+		</div>
+
+		<form action="" method="post" enctype="multipart/form-data">
+			
+			<div class="card-section">
+				<h3>Bagian 1: Data Tim dan Ketua</h3>
+				<div class="form-row">
+					<div class="form-group">
+						<label for="nama_tim">Nama Tim</label>
+						<input type="text" id="nama_tim" name="nama_tim" placeholder="Masukkan nama tim" />
+					</div>
+					<div class="form-group">
+						<label for="nama_ketua">Nama Ketua</label>
+						<input type="text" id="nama_ketua" name="nama_ketua" placeholder="Nama lengkap ketua" />
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group">
+						<label for="jumlah_anggota">Jumlah Anggota</label>
+						<input type="text" id="jumlah_anggota" name="jumlah_anggota" size="10" placeholder="Cth: 3" />
+					</div>
+					<div class="form-group">
+						<label for="prodi">Program Studi</label>
+						<select id="prodi" name="prodi">
+							<option value="">-- Pilih Program Studi --</option>
+							<option>Informatika</option>
+							<option>Sistem Informasi</option>
+							<option>Teknik Industri</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="card-section">
+				<h3>Bagian 2: Kategori dan Bidang Lomba</h3>
+				<div class="form-group">
+					<label>Kategori Partisipasi</label>
+					<div class="options-box">
+						<input type="radio" id="individu" name="kategori" value="Individu" />
+						<label for="individu" class="inline-label">Individu</label>
+						<input type="radio" id="kelompok" name="kategori" value="Kelompok" />
+						<label for="kelompok" class="inline-label">Kelompok</label>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Bidang Kompetisi</label>
+					<div class="checkbox-box">
+						<p><input type="checkbox" id="programming" name="bidang" value="Programming" /> <label for="programming" class="inline-label">Programming</label></p>
+						<p><input type="checkbox" id="uiux" name="bidang" value="UI/UX Design" /> <label for="uiux" class="inline-label">UI/UX Design</label></p>
+						<p><input type="checkbox" id="karya_tulis" name="bidang" value="Karya Tulis" /> <label for="karya_tulis" class="inline-label">Karya Tulis</label></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card-section">
+				<h3>Bagian 3: Unggah Berkas dan Deskripsi</h3>
+				<div class="form-group">
+					<label for="deskripsi">Deskripsi Singkat Karya</label>
+					<textarea id="deskripsi" name="deskripsi" rows="4" cols="30" placeholder="Ceritakan konsep karya Anda secara singkat..."></textarea>
+				</div>
+				<div class="form-group">
+					<label for="file_karya">Dokumen / File Karya</label>
+					<input type="file" id="file_karya" name="file_karya" class="file-input" />
+				</div>
+			</div>
+
+			<div class="form-actions">
+				<input type="submit" name="daftar" value="Kirim Pendaftaran Tim" class="btn-submit" />
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>
