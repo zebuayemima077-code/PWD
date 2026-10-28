@@ -4,14 +4,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Pendaftaran Seminar Teknologi Nasional 2026</title>
+    <title>Formulir Pendaftaran Workshop Mahasiswa Yogyakarta</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <div id="wrapper">
         <div id="header-form">
-            <h2>Formulir Pendaftaran Seminar</h2>
-            <p>Silakan isi data diri Anda di bawah ini.</p>
+            <h2>Formulir Pendaftaran Workshop Mahasiswa Yogyakarta</h2>
         </div>
 
         <form action="" method="post" enctype="multipart/form-data">
@@ -22,25 +21,18 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Alamat Email</label>
+                    <label for="email">Email</label>
                     <input type="text" id="email" name="email" size="30" placeholder="nama@email.com" />
                 </div>
 
                 <div class="form-group">
-                    <label for="nim">Nomor Induk Mahasiswa (NIM)</label>
-                    <input type="text" id="nim" name="nim" size="30" placeholder="Contoh: 21001" />
+                    <label for="universitas">Universitas</label>
+                    <input type="text" id="universitas" name="universitas" size="30" placeholder="Masukkan nama universitas Anda" />
                 </div>
 
                 <div class="form-group">
                     <label for="prodi">Program Studi</label>
-                    <select id="prodi" name="prodi">
-                        <option value="">-- Pilih Program Studi --</option>
-                        <option>Informatika</option>
-                        <option>Sistem Informasi</option>
-                        <option>Teknik Industri</option>
-                        <option>Manajemen</option>
-                        <option>Akuntansi</option>
-                    </select>
+                    <input type="text" id="prodi" name="prodi" size="30" placeholder="Masukkan program studi Anda" />
                 </div>
 
                 <div class="form-group">
@@ -51,9 +43,6 @@
 
                         <input type="radio" id="vip" name="tiket" value="VIP" />
                         <label for="vip" class="inline-label">VIP</label>
-
-                        <input type="radio" id="online" name="tiket" value="Online" />
-                        <label for="online" class="inline-label">Online</label>
                     </div>
                 </div>
 
@@ -61,9 +50,7 @@
                     <label>Topik Seminar yang Diminati</label>
                     <div class="checkbox-group">
                         <p><input type="checkbox" id="ai" name="topik" value="Artificial Intelligence" /> <label for="ai" class="inline-label">Artificial Intelligence</label></p>
-                        <p><input type="checkbox" id="data" name="topik" value="Data Science" /> <label for="data" class="inline-label">Data Science</label></p>
                         <p><input type="checkbox" id="cyber" name="topik" value="Cyber Security" /> <label for="cyber" class="inline-label">Cyber Security</label></p>
-                        <p><input type="checkbox" id="cloud" name="topik" value="Cloud Computing" /> <label for="cloud" class="inline-label">Cloud Computing</label></p>
                         <p><input type="checkbox" id="web" name="topik" value="Web Development" /> <label for="web" class="inline-label">Web Development</label></p>
                     </div>
                 </div>
@@ -71,11 +58,10 @@
                 <div class="form-group">
                     <label for="jam">Sesi Waktu Seminar</label>
                     <select id="jam" name="jam">
-                        <option>08.00 - 10.00 WIB</option>
-                        <option>10.00 - 12.00 WIB</option>
-                        <option>13.00 - 15.00 WIB</option>
-                        <option>15.00 - 17.00 WIB</option>
-                        <option>19.00 - 21.00 WIB</option>
+                        <option value="">-- Pilih Sesi Waktu --</option>
+                        <option>Sesi pagi: 08.00-10.00</option>
+                        <option>Sesi siang: 13.00-15.00</option>
+                        <option>Sesi malam: 19.00-21.00</option>
                     </select>
                 </div>
 
@@ -88,17 +74,12 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="pertanyaan">Pertanyaan untuk Narasumber</label>
-                    <textarea id="pertanyaan" name="pertanyaan" rows="5" cols="30" placeholder="Tuliskan pertanyaan jika ada..."></textarea>
-                </div>
-
-                <div class="form-group">
                     <label for="bukti">Unggah Bukti Pembayaran</label>
                     <input type="file" id="bukti" name="bukti" accept="image/gif, image/jpeg, image/png" />
                 </div>
 
                 <div class="form-actions">
-                    <input type="submit" name="simpan" value="Kirim Pendaftaran" class="btn-submit" />
+                    <input type="submit" name="simpan" value="Kirim" class="btn-submit" />
                 </div>
             </fieldset>
         </form>

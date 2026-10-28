@@ -20,16 +20,9 @@ body {
 
 #header-form h2 {
     color: #1a365d; 
-    margin-bottom: 5px;
-    text-align: center;
-    font-size: 26px;
-}
-
-#header-form p {
-    color: #4a5568; 
-    font-size: 15px;
-    text-align: center;
     margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
 }
 
 fieldset {
@@ -50,7 +43,7 @@ label {
     color: #2d3748;
 }
 
-input[type="text"], select, textarea {
+input[type="text"], select {
     font-family: inherit;
     width: 380px;
     padding: 8px 10px;
@@ -60,7 +53,7 @@ input[type="text"], select, textarea {
     box-sizing: border-box;
 }
 
-input[type="text"]:focus, select:focus, textarea:focus {
+input[type="text"]:focus, select:focus {
     border-color: #3182ce; 
     background-color: #ffffff;
     outline: none;
