@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    type="text/javascript"></script>
+  <style type="text/css">
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    .hasil {
+      margin-top: 15px;
+      padding: 10px;
+      border: 1px solid gray;
+      width: 300px;
+    }
+    button, input, select {
+      margin: 5px;
+      padding: 8px;
+    }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("#pilihMakanan").change(function() {
+        const nama = $("#nama").val();
+        const makanan = $(this).val();
+        if (nama === "") {
+          $("#hasilMakanan")
+            .text("Nama belum diisi!")
+            .css("color", "red");
+        } else if (makanan === "") {
+          $("#hasilMakanan")
+            .text("Silakan Memilih Makanan.")
+            .css("color", "black");
+        } else {
+          $("#hasilMakanan")
+            .text("Halo, " + nama + "! Pesanan Makanan Anda adalah " + makanan + ".")
+            .css("color", "blue");
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h2>Silahkan Pilih Makanan</h2>
+  <h3>1. Pilih Makanan</h3>
+  <label for="nama">Nama Pemesan: </label>
+  <input type="text" id="nama" />
+  <br />
+  <label for="pilihMakanan">Pesanan: </label>
+  <select id="pilihMakanan">
+    <option value="">-- Pilih Makanan --</option>
+    <option value="Nasi Goreng">Nasi Goreng</option>
+    <option value="Mie Ayam">Mie Ayam</option>
+    <option value="Sate Ayam">Sate Ayam</option>
+  </select>
+  <p id="hasilMakanan" class="hasil">
+        Pesanan makanan akan ditampilkan di sini.
+  </p>
+</body>
+</html>
